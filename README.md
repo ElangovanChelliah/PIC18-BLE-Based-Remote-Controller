@@ -57,7 +57,7 @@ System Design:
 
 ### Hardware Design
 
-The designed schematics uses a seperate 662K 3.3V voltage regulator for module testing, the integrated applications can use the same schematics connected to the common voltage source of 3.3V, Altium designer is used to layout the circuit. The schematics can be transformed to desired layouts like module or custom hardware. 
+The hardware design for this project is complex and require PCB development and EMC embedded hardware development experiences, because of the `High speed Data Lines` `I2C` `UART` `BLE Antenna` `Low Power Design`, the project is an example for effecient integration in an industrial design, where proper layouts are planned and executed.  
 
 <img src="https://github.com/ElangovanChelliah/PIC16-1.3Inch-OLED-Interface/blob/7bf8ae4249119983b670ed0e5f937535a9344fe7/Schematics.png" width="600">
 
