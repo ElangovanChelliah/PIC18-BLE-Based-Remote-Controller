@@ -5,7 +5,7 @@ This project demonstrates a simple hardware design for 1.3 inch monochrome OLED 
 ### Softwares used
 `Altium Designer` `MPLAB X IDE` `Proteus` `Tear Term` 
 ### Skills
-`Circuit Design` `Schematic Capture` `PCB Layout` `Debugging & Testing` `Embedded C` `Embedded Product Development`
+`Analog Circuit Design` `Digital Circuit Design` `Schematic Capture` `PCB Layout` `Debugging & Testing` `Embedded C` `Embedded Product Development` `Technical Documentation` `3D Printing` `Hand made PCB`
 
 System Design:
 <table>
@@ -15,8 +15,12 @@ System Design:
   </tr>
   <tr>
     <td>MCU</td>
-    <td>PIC16F1615</td>
+    <td>PIC18F67K22</td>
   </tr>
+    <tr>
+    <td>Internal Clock</td>
+    <td>16MhZ</td>
+  </tr>	
   <tr>
     <td>OLED</td>
     <td>1.3 Inch</td>
@@ -30,13 +34,25 @@ System Design:
     <td>I2C</td>
   </tr>
   <tr>
-    <td>Oscillator</td>
-    <td>INTSOC</td>
+    <td>BLE</td>
+    <td>Dialog SoC</td>
   </tr>
-    <tr>
-    <td>Internal Clock</td>
-    <td>16MhZ</td>
-  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>UART</td>
+  </tr>	
+  <tr>
+    <td>BAUD</td>
+    <td>115200</td>
+  </tr>	
+  <tr>
+    <td>Function</td>
+    <td>Interrupt Button</td>
+  </tr>		
+  <tr>
+    <td>Charging IC</td>
+    <td>TP4056</td>
+  </tr>		
  </table>
 
 ### Hardware Design
