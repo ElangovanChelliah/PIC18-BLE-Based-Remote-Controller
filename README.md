@@ -279,6 +279,5 @@ void SH1106_Display(void){
 ### Output
 
 The product can work successfully without any issues, with the programmed HMI control applications. The product can pair, reconnect, remember the IP of last connection using the detailed version of Code.
-<img 
-	
-src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/15b3bebb9af2fd65309d46a792e7bfdc0540a8e1/Output.png" width="500">
+
+<img src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/15b3bebb9af2fd65309d46a792e7bfdc0540a8e1/Output.png" width="500">
