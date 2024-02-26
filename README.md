@@ -55,6 +55,10 @@ System Design:
   </tr>		
  </table>
 
+### Architecture
+
+<img src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/86d679831dd7967d71da7db6a3dec0781ca22b36/Architecture.jpg" width="400">
+
 ### Hardware Design
 
 The hardware design for this project is complex and require PCB development and EMC embedded hardware development experiences, because of the `High speed Data Lines` `I2C` `UART` `BLE Antenna` `Low Power Design`, the project is an example for effecient integration in an industrial design, where proper layouts are planned and executed.  
