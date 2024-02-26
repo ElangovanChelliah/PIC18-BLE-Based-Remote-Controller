@@ -70,7 +70,7 @@ The hardware design for this project is complex and require PCB development and 
 <img src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/3bb26e18566e4e19ec74af91a1ffbec26304514a/Pin%20Diagram.png" width="400">
 
 ### Software Design
-MPLAB X IDE is used to design and develop firmware and software, copy the project files [here](https://github.com/ElangovanChelliah/PIC16-1.3Inch-OLED-Interface/tree/3b928b85792c1b3a9fc59a058e2cbee1c41ed1a5/Firmware), and execute the same to get the desired output, from the example in this project a library is created and LOGO is used to demonstrate the functionality.
+MPLAB X IDE is used to design and develop firmware and software for the PIC Microcontroller used, copy the project files for `OLED INTERFACE` from [here](https://github.com/ElangovanChelliah/PIC16-1.3Inch-OLED-Interface/tree/3b928b85792c1b3a9fc59a058e2cbee1c41ed1a5/Firmware), and execute the same to get the desired output for OLED functionalities, the HMI design using `Button` `Indication LED` `Tactile Switches` are programmed as per the desired functionality. The BLE module uses `Custom Frimware` developed using `KEIL` is in the private documents and open for enthusiasts for colloboration. 
 
 Example:
 ```c
