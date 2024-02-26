@@ -79,7 +79,58 @@ MPLAB X IDE is used to design and develop firmware and software for the PIC Micr
 
 <img src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/b01b197de7ccf18ed9c87204883cd24eccee2c40/SW%20Architecture.jpg" width="1600">
 
-Example:
+BLE Connection:
+The connections are configured using different IP used for the slave device, the code helps the hardware to initialize, connect, and configure.
+```c
+//****BLE CONNECTION.c****//
+void Bluetooth_connect(){
+    int i = 0;
+    //Enter IP of the Master to establish the connection "AT+GAPCONNECT=xx:xx:xx:xx:xx:xx,x\r" 
+    //AT+GAPCONNECT 
+    //const char *H = "AT+GAPCONNECT=48:23:35:01:A8:B6,P\r"; // WiRELESS MOTOR
+    //const char *H = "AT+GAPCONNECT=48:23:35:01:A8:AD,P\r"; // TEMPERATURE CONTROL 
+    //const char *H = "AT+GAPCONNECT=48:23:35:01:A8:B6,P\r"; // BMS MONITOR 
+    //const char *H = "AT+GAPCONNECT=48:23:35:01:A8:CA,P\r"; // REMOTE CURTAIN
+    for(i=0;i<strlen(H);i++){
+        EUSART1_Write(H[i]);
+    }
+    __delay_ms(1000);
+    //AT+BINREQ
+    const char *K = "AT+BINREQ\r";
+    for(i=0;i<strlen(K);i++){
+        EUSART1_Write(K[i]);
+    }
+    __delay_ms(10);
+
+    //AT+BINREQACK
+    const char *J = "AT+BINREQACK\r";
+    for(i=0;i<strlen(J);i++){
+        EUSART1_Write(J[i]);
+    }
+    __delay_ms(10);
+}
+
+void Bluetooth_exit(){
+    int i = 0;
+    //EXIT +++
+    const char *M = "+++\r";
+    for(i=0;i<strlen(M);i++){
+        EUSART1_Write(M[i]);
+    }
+    __delay_ms(10);
+    const char *N = "AT+BINREQEXIT\r";
+    for(i=0;i<strlen(N);i++){
+        EUSART1_Write(N[i]);
+    }
+    __delay_ms(10);
+    const char *O = "ATR\r";
+    for(i=0;i<strlen(O);i++){
+        EUSART1_Write(O[i]);  
+     }
+}
+```
+
+Example Font:
 ```c
 //****sh1106.c****//
 #include "myOLED_SH1106.h"
@@ -227,4 +278,4 @@ void SH1106_Display(void){
 
 ### Output
 
-<img src="https://github.com/ElangovanChelliah/PIC16-1.3Inch-OLED-Interface/blob/aaa293a598f0cbdf646f21cc152dbaaec0948218/Output.jpg" width="1100">
+<img src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/15b3bebb9af2fd65309d46a792e7bfdc0540a8e1/Output.png" width="500">
