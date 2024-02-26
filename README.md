@@ -59,7 +59,7 @@ System Design:
 
 The hardware design for this project is complex and require PCB development and EMC embedded hardware development experiences, because of the `High speed Data Lines` `I2C` `UART` `BLE Antenna` `Low Power Design`, the project is an example for effecient integration in an industrial design, where proper layouts are planned and executed.  
 
-<img src="https://github.com/ElangovanChelliah/PIC16-1.3Inch-OLED-Interface/blob/7bf8ae4249119983b670ed0e5f937535a9344fe7/Schematics.png" width="600">
+<img src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/13929bbb78484ba396e7d23898750a48e4ff4103/Schematics.jpg" width="1600">
 
 <img src="https://github.com/ElangovanChelliah/PIC16-1.3Inch-OLED-Interface/blob/fb46c0077c1c229d86bac8b4fa5d2c523bebb977/1.3%20Inch%20OLED.png" width="300">
 
