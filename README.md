@@ -61,7 +61,7 @@ System Design:
 
 ### Hardware Design
 
-The hardware design for this project is complex and require PCB development and EMC embedded hardware development experiences, because of the `High speed Data Lines` `I2C` `UART` `BLE Antenna` `Low Power Design`, the project is an example for effecient integration in an industrial design, where proper layouts are planned and executed.  
+The hardware design for this project is complex and require PCB development and EMC embedded hardware development experiences, because of the `High-speed Data Lines` `I2C` `UART` `BLE Antenna` `Low Power Design`, the project is an example for effecient integration in an industrial design, where proper layouts are planned and executed.  
 
 <img src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/13929bbb78484ba396e7d23898750a48e4ff4103/Schematics.jpg" width="1600">
 
@@ -74,7 +74,10 @@ The hardware design for this project is complex and require PCB development and 
 <img src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/3bb26e18566e4e19ec74af91a1ffbec26304514a/Pin%20Diagram.png" width="400">
 
 ### Software Design
-MPLAB X IDE is used to design and develop firmware and software for the PIC Microcontroller used, copy the project files for `OLED INTERFACE` from [here](https://github.com/ElangovanChelliah/PIC16-1.3Inch-OLED-Interface/tree/3b928b85792c1b3a9fc59a058e2cbee1c41ed1a5/Firmware), and execute the same to get the desired output for OLED functionalities, the HMI design using `Button` `Indication LED` `Tactile Switches` are programmed as per the desired functionality. The BLE module uses `Custom Frimware` developed using `KEIL` is in the private documents and open for enthusiasts for colloboration. 
+MPLAB X IDE is used to design and develop firmware and software for the PIC Microcontroller used, copy the project files for `OLED INTERFACE` from [here](https://github.com/ElangovanChelliah/PIC16-1.3Inch-OLED-Interface/tree/3b928b85792c1b3a9fc59a058e2cbee1c41ed1a5/Firmware), and execute the same to get the desired output for OLED functionalities, the HMI design using `Button` `Indication LED` `Tactile Switches` are programmed as per the desired functionality. The BLE module uses `Custom Firmware` developed using `KEIL` is in private documents and is open for enthusiasts for collaboration. 
+
+
+<img src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/b01b197de7ccf18ed9c87204883cd24eccee2c40/SW%20Architecture.jpg" width="1600">
 
 Example:
 ```c
@@ -223,6 +226,5 @@ void SH1106_Display(void){
 
 
 ### Output
-The SH1106 I2C 1.3 Inch OLED can work successfully and can display graphics.
 
 <img src="https://github.com/ElangovanChelliah/PIC16-1.3Inch-OLED-Interface/blob/aaa293a598f0cbdf646f21cc152dbaaec0948218/Output.jpg" width="1100">
