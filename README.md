@@ -63,7 +63,7 @@ The hardware design for this project is complex and require PCB development and 
 
 ### Hardware Assembly
 
-<img src="https://github.com/ElangovanChelliah/PIC16-1.3Inch-OLED-Interface/blob/fb46c0077c1c229d86bac8b4fa5d2c523bebb977/1.3%20Inch%20OLED.png" width="300">
+<img src="https://github.com/ElangovanChelliah/PIC18-BLE-Based-Remote-Controller/blob/cc67ed95bdc18d9fe1959f5d6ccb8ff339b5bd2d/3D-Assembly.png" width="200">
 
 ### Pin Diagram
 
